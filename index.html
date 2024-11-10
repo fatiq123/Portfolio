@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Merriweather", serif;
+        }
+
+        #top-container {
+            background-color: #e4f9f5;
+            height: 100vh;
+            position: relative;
+        }
+
+        .mountain {
+            position: absolute;
+            bottom: 0;
+            left: 35%;
+        }
+
+        .cloud1 {
+            position: absolute;
+            top: 30px;
+            left: 75%;
+        }
+
+        .cloud2 {
+            position: absolute;
+            left: 10%;
+            top: 59%;
+        }
+
+        #title-text {
+            position: absolute;
+            top: 20%;
+            left: 35%;
+        }
+
+        #title-text>h1 {
+            color: #66bfbf;
+            font-size: 5.625rem;
+            margin: 50px auto 0 auto;
+            font-family: "Sacramento", cursive;
+        }
+
+        #title-text>h2 {
+            color: #66bfbf;
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.9rem;
+            font-weight: normal;
+            padding-bottom: 10px;
+            margin-left: 50px;
+        }
+
+        #middle-container {
+            /* margin-top: 40px; */
+            margin: 100px 0;
+            text-align: center;
+        }
+
+        #profile>h2 {
+            color: #66bfbf;
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.5rem;
+            font-weight: normal;
+            padding: 20px 0;
+        }
+
+        #profile>img {
+            height: 220px;
+            width: 220px;
+            border-radius: 50%;
+            background-color: #a4caca;
+            object-fit: contain;
+        }
+
+        #profile>p {
+            width: 30%;
+            margin: auto;
+            outline: 1px solid #ac050b !important;
+            line-height: 2;
+        }
+
+        .spacing {
+            padding-left: 20px;
+        }
+
+        #skills>h2 {
+            color: #66bfbf;
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.5rem;
+            font-weight: normal;
+            padding: 20px 0;
+        }
+
+        hr {
+            border: dotted #eaf6f6 9px;
+            border-bottom: none;
+            width: 4%;
+            margin: 100px auto;
+        }
+
+        #contact-me>h2 {
+            color: #66bfbf;
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.5rem;
+            font-weight: normal;
+            padding-bottom: 10px;
+        }
+
+        #contact-me>h3 {
+            color: #11999e;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        #bottom-container {
+            background-color: #66bfbf;
+            padding: 50px 0 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="top-container">
+        <img class="cloud1" src="./images/cloud.png" alt="cloud">
+        <div id="title-text">
+            <h1>I'm Fatiq.</h1>
+            <h2>a <u>pro</u>grammer.</h2>
+        </div>
+        <img class="cloud2" src="./images/cloud.png" alt="cloud">
+        <img class="mountain" src="./images/mountain.png" alt="mountain">
+    </div>
+
+    <div id="middle-container">
+        <div id="profile">
+            <img src="./images/profile.PNG" alt="profile picture">
+            <h2>Hi.</h2>
+            <p>I am a Backend Developer with a strong focus in Java and Spring Boot. I am learning web development. I
+                often do app development using Kotlin. I am also certified in Azure.</p>
+        </div>
+
+        <hr>
+
+        <div id="skills">
+            <h2>My Skills</h2>
+            <div style="padding-top: 10px;" id="parent">
+                <div style="padding-top: 20px; display: flex;  align-items: center; text-align: left; justify-content: center;"
+                    id="backend">
+                    <img style="height: 100px; width: auto; margin-right: 20px;" src="./images/spring-initializr.svg"
+                        alt="backend">
+                    <div class="spacing" style="width: 30%;">
+                        <h3>Java Spring Boot</h3>
+                        <p style="padding-top: 10px;">I like Java and I am learning Spring Boot to make secure and
+                            scalable Restful Api. I use Hibernate for ORM and Spring Data JPA for persistance storage. I
+                            use spring MVC for web api.</p>
+                    </div>
+                </div>
+                <div style="padding-top: 20px; display: flex;  align-items: center; text-align: left; justify-content: center;"
+                    id="app-development">
+                    <img style="height: 100px; width: auto; margin-right: 20px;" src="./images/kotlin.jpeg"
+                        alt="kotlin">
+                    <div class="spacing" style="width: 30%;">
+                        <h3>Kotlin App Development</h3>
+                        <p style="padding-top: 10px;">I have some experience in android app development using Kotlin. I
+                            developed some native Android Apps. I use both XML and Jetpack Compose.</p>
+                    </div>
+                </div>
+                <div style="padding-top: 20px; display: flex;  align-items: center; text-align: left; justify-content: center;"
+                    id="database">
+                    <img style="height: 100px; width: auto; margin-right: 20px;" src="./images/postgresql.png"
+                        alt="postgresql">
+                    <div class="spacing" style="width: 30%;">
+                        <h3>PostgreSQL Database</h3>
+                        <p style="padding-top: 10px;">I like PostgreSQL database as it is the latest RDBMS. I always use
+                            it whenever I make Restful Api or Mobile backend.</p>
+                    </div>
+                </div>
+                <div style="padding-top: 20px; display: flex;  align-items: center; text-align: left; justify-content: center;"
+                    id="Cloud">
+                    <img style="height: 100px; width: auto; margin-right: 20px;" src="./images/azure.jpeg" alt="azure">
+                    <div class="spacing" style="width: 30%;">
+                        <h3>Microsoft Azure</h3>
+                        <p style="padding-top: 10px;">I passed AZ-900 fundamentals exam. I have gained valueable skills
+                            in cloud domain. I have good knowledge of Databases, Networing, Storage, Application using
+                            Azure cloud provider.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="contact-me">
+                <h2>Get in Touch</h2>
+                <h3>If you have also one of the above skills then we can connect to each other and develop systems
+                    together.</h3>
+                <h3 style="padding-top: 20px;">Want to see my: <a
+                        href="https://github.com/fatiq123?tab=repositories">GitHub</a></h3>
+                <h3 style="padding-top: 20px;">Connect with me</h3>
+                <h3 style="padding-top: 20px; color: rgb(118, 80, 80);">Phone number: 03229549909</h3>
+                <div id="socials"
+                    style="padding-top: 10px; align-items: center; display: flex; flex-direction: row; justify-content: center; gap: 10px;">
+                    <a href="https://www.instagram.com/fatiqhussnain/" target="_blank"><img width="40"
+                            style="border-radius: 50%;" src="./images/instagram.jpeg" alt="instagram"></a>
+                    <a href="https://www.facebook.com/fatiq.hussnain/" target="_blank"><img width="40"
+                            style="border-radius: 50%;" src="./images/facebook.png" alt="facebook"></a>
+                    <a href="https://x.com/fatiq_hussnain" target="_blank"><img width="40" style="border-radius: 50%;"
+                            src="./images/x3.png" alt="X"></a>
+                    <a href="https://www.linkedin.com/in/fatiq-hussnain-146a32293/" target="_blank"><img width="40"
+                            style="border-radius: 50%;" src="./images/linked.png" alt="linkedin"></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom-container">
+        <p> All right reserved © Fatiq Hussnain © 2024</p>
+    </div>
+
+</body>
+
+</html>
